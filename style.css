@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #eee;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Caveat", cursive;
+}
+
+.underline, .cta h4::after, .uvod article h4::after, header p::after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 3px;
+  margin: 20px auto;
+  background-color: orangered;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/*Header**/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  header {
+    height: 80vh;
+  }
+}
+header p {
+  font-size: 2rem;
+}
+header h1 {
+  font-size: 7rem;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/*Uvod**/
+.uvod {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.uvod article {
+  flex: 0 0 48%;
+}
+@media (max-width: 768px) {
+  .uvod article {
+    flex: 0 0 100%;
+  }
+}
+.uvod article img {
+  width: 100%;
+}
+.uvod article .text {
+  background: white;
+  padding: 40px;
+  position: relative;
+  top: -16px;
+}
+.uvod article h4 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.uvod article h2 {
+  margin: 20px 0;
+  font-size: 2.4rem;
+}
+.uvod article button {
+  padding: 15px 30px;
+  background-color: orangered;
+  margin-top: 30px;
+  font-size: 1rem;
+  border: none;
+  text-transform: uppercase;
+}
+.uvod article button:hover {
+  cursor: pointer;
+  background: #444;
+  color: white;
+  transition: 3s ease;
+}
+
+/***CTA**/
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/3.jpg);
+  height: 100vh;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.cta h4 {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.cta h4::after {
+  width: 100px;
+}
+.cta h2 {
+  font-size: 6rem;
+}
+
+/**Galerija**/
+.galerija {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.galerija article {
+  flex: 0 0 48%;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .galerija article {
+    flex: 0 0 100%;
+  }
+}
+.galerija article img {
+  width: 100%;
+  border: 15px solid white;
+  box-shadow: 0 0 20px #999;
+  border-radius: 10px;
+}
+.galerija article img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+  border: 15px solid orangered;
+}
+
+/**FOOTER**/
+footer {
+  padding: 40px 0;
+  text-align: center;
+  background: #444;
+}
+footer a {
+  color: orangered;
+  margin: 0 20px;
+  font-size: 2rem;
+}
+footer a:hover {
+  color: #eee;
+  transition: 3s ease;
+}
+footer p {
+  color: orangered;
+  margin-top: 30px;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
